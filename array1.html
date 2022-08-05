@@ -1,0 +1,22 @@
+<html>
+<body>
+<h2 id="h1"></h2>
+<script>
+	names=["CSE","MECH","ECE","CIVIL","IT"];
+	document.write("array elements are:"+names+"<br>");
+	document.write("first element is:"+names[0]+"<br>");
+	document.getElementById("h1").innerHTML=names[0];
+	document.write("<h1>"+names[1]+"</h1>");
+	//names=[50,60,70];
+	//document.write("array elements are:"+names+"<br>");
+	const data=[10,20,30];
+	document.write("elements of constant array:"+data+"<br>");
+	//data=[10,20,30];
+	//document.write("elements of constant array:"+data+"<br>");
+	document.write("length is:"+names.length+"<br>");
+	for(i=0;i<data.length;i++){
+		document.write("Array element"+(i+1)+"is:"+data[i]+"<br>");
+	}
+</script>
+</body>
+</html>
