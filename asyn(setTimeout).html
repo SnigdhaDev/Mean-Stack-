@@ -1,0 +1,22 @@
+<html>
+<body>
+<h2 id="demo1"></h2>
+<h2 id="demo2"></h2>
+<script>
+	function f1(){
+		document.getElementById("demo1").innerHTML="Hello";
+	}
+	function f2(){
+		document.write(" Called Function 2"+"<br>");
+	}
+	function f3(){
+		for(i=1;i<=25;i++){
+			document.write(i+"<br>");
+		}
+	}
+	setTimeout(f1,2000);
+	setTimeout(f3,3000);
+	f2();
+</script>
+</body>
+</html>

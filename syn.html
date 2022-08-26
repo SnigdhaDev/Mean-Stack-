@@ -1,0 +1,23 @@
+<html>
+<body>
+<script>
+	a=[1,2,3,4,5];
+	s=0;
+	function f1(){
+		document.write(" Called Function 1"+"<br>");
+	}
+	function f2(){
+		document.write(" Called Function 2"+"<br>");
+	}
+	function f3(){
+		for(i=0;i<a.length;i++){
+			s=s+a[i];
+		}
+		document.write(" Called Function 3"+"<br>"+"array sum  is:"+s+"<br>");
+	}
+	f3();
+	f1();
+	f2();
+</script>
+</body>
+</html>

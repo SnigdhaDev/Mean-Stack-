@@ -1,0 +1,25 @@
+<html>
+<body>
+<h1 id="demo1"></h1>
+<h2 id="demo"></h2>
+<script>
+	n1=parseInt(window.prompt("enter n1 value"));
+	n2=parseInt(window.prompt("enter n2 value"));
+	function f1(){
+		document.write(" Called Function 1"+"<br>");
+	}
+	function f2(){
+		document.write(" Called Function 2"+"<br>");
+	}
+	function f3(a,b){
+		var d=new Date();
+		document.getElementById("demo").innerHTML=d.getHours()+":"+d.getMinutes()+":"+d.getSeconds();
+		document.getElementById("demo1").innerHTML=a+b;
+		//callback();
+	}
+	f1();
+	setInterval(f3,3000,n1,n2);
+	f2();
+</script>
+</body>
+</html>
